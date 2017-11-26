@@ -1,0 +1,18 @@
+# EXPOSER/FLASHER
+
+duration: 500            # temp en minutes
+interval: 4             # interval entre deux images en secondes
+backup: false          # garder une copie des captures ? [true|false]
+monitorFPS: 60          # vitesse de l'animation en images par secondes
+cleanDuration: 0      # temp de nettoyage en secondes entre deux expositions#
+screenWidth: 3264       # largeur écran
+screenHeight: 2448       # hauteur écran
+backgroundColor: "#BFBFBF" # couleur fond en hexa (#BFBFBF)
+
+
+
+showMonitor: true        # afficher le moniteur en live [true|false]
+showVideoBackup: false    # afficher la video de secours [true|false]
+showProjection: true     # afficher la projection sur l'aquarium [true|false]
+showLiveVlc: false         # show vlc player with live video
+

@@ -1,0 +1,7 @@
+# EXPOSER/FLASHER
+
+duration: 45            # temp en minutes
+# interval: 4             # interval entre deux images en secondes
+# backup: false           # garder une copie des captures ? [true|false]
+# monitorFPS: 12          # vitesse de l'animation en images par secondes
+# cleanDuration: 30       # temp de nettoyage entre deux expositions

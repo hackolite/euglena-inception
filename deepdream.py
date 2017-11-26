@@ -3,6 +3,7 @@ import torch
 from util import showtensor
 import scipy.ndimage as nd
 from torch.autograd import Variable
+import time
 
 
 def objective_L2(dst, guide_features):
@@ -48,7 +49,7 @@ def make_step(img, model, control=None, distance=objective_L2):
 
 def dream(model,
           base_img,
-          octave_n=6,
+          octave_n=1,
           octave_scale=1.4,
           control=None,
           distance=objective_L2):
@@ -68,6 +69,5 @@ def dream(model,
                 detail, (1, 1, 1.0 * h / h1, 1.0 * w / w1), order=1)
 
         input_oct = octave_base + detail
-        print(input_oct.shape)
         out = make_step(input_oct, model, control, distance=distance)
         detail = out - octave_base
